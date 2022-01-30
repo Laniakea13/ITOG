@@ -8,10 +8,7 @@ void PrintArray(string[] arr)
    }
 }
 
-/*int l = array[3].Length;
-Console.WriteLine(l);*/
-
-string RunArray(string[] finarray)
+string[] RunArray(string[] finarray)
 {
     int count = 0;
     for (int i = 0; i < finarray.Length; i++)
@@ -23,13 +20,9 @@ string RunArray(string[] finarray)
     int index = 0;
      for (int i = 0; i < finarray.Length; i++)
      {
-        if(finarray[i].Length <= 0) fin[index++] = finarray[i];
+        if(finarray[i].Length <= 3) fin[index++] = finarray[i];
      }
-  return fin[];
+ return fin;
 }
 
-
-PrintArray(array);
-Console.WriteLine();
-RunArray(array);
-PrintArray(RunArray(array[]))
+PrintArray(RunArray(array));
